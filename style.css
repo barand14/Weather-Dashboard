@@ -3,10 +3,6 @@ header {
   padding: 20px;
 }
 
-form {
-  margin-top: 20px;
-}
-
 input[type="text"] {
   padding: 10px;
   margin-right: 10px;
@@ -24,4 +20,27 @@ button:hover {
   background-color: #0056b3;
 }
     
-  
+.currentCard{
+  background-color:aqua;
+  border: 5px solid blue;
+  border-radius: 70%;
+  width: 50%;
+  text-align: center;
+}
+
+.forecastCard {
+  background-color:aqua;
+  border: 5px solid blue;
+  border-radius: 10%;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+#forecast {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
