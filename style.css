@@ -31,7 +31,7 @@ button:hover {
 .forecastCard {
   background-color:aqua;
   border: 5px solid blue;
-  border-radius: 10%;
+  border-radius: 15%;
   text-align: center;
   width: 150px;
   height: 150px;

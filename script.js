@@ -21,6 +21,8 @@ function forecastCall(city){
 
             console.log(`Date: ${weatherData.list[i].dt_txt}`);
             console.log(`Temperature: ${weatherData.list[i].main.temp}°C`);
+            console.log(`Humidity: ${weatherData.list[i].main.humidity}%`);
+            console.log(`Wind Speed: ${weatherData.list[i].wind.speed} m/s`);
             console.log('Weather: ${weatherData.list[i].weather[0].description}');
             console.log('---');
 
@@ -33,19 +35,20 @@ function forecastCall(city){
 
         const tempurature = document.createElement("p")
         tempurature.textContent = weatherData.list[i].main.temp + " C"
+        const humidity = document.createElement("p")
+            humidity.textContent = "Humidity: " + weatherData.list[i].main.humidity + "%"
+
+            const windSpeed = document.createElement("p")
+            windSpeed.textContent = "Wind Speed: " + weatherData.list[i].wind.speed + " m/s"
 
         // other variables for date, humidity, wind speed, icon
         
-        cardDiv.append(date, tempurature)
-        document.getElementById("forecast").append(cardDiv)
+        cardDiv.append(date, tempurature, humidity, windSpeed)
+            document.getElementById("forecast").append(cardDiv)
 
     }
-
-
-
-    })
+ })
    
-    
 }
 
 function currentCall(city){
@@ -62,6 +65,10 @@ function currentCall(city){
 
         const tempurature = document.createElement("h3")
         tempurature.textContent = weatherData.main.temp + " C"
+        const humidity = document.createElement("p")
+        humidity.textContent = "Humidity: " + weatherData.main.humidity + "%"
+        const windSpeed = document.createElement("p")
+        windSpeed.textContent = "Wind Speed: " + weatherData.wind.speed + " m/s"
 
         // other variables for date, humidity, wind speed, icon
         
