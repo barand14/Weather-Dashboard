@@ -15,8 +15,6 @@ SO THAT I can plan a trip accordingly
 
 ## Data disply page
 
-![Screenshot 2024-04-11 231156](https://github.com/barand14/Weather-Dashboard/assets/151784712/13a3c298-da7d-4e92-abaf-1861933ca3d1)
-
 
 
 ![Screenshot 2024-04-19 223558](https://github.com/barand14/Weather-Dashboard/assets/151784712/79e36eb7-b9ab-4ae0-a7a7-fe4608607e97)
